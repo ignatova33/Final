@@ -1,0 +1,24 @@
+using System;
+
+namespace ignatova_project1
+{
+    class MainClass
+    {
+        static string Distance(float x)
+        {
+            float result = x * 0.621f;
+            return result;
+            
+
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine();
+            float userInt = float.Parse(Console.ReadLine());
+
+            string result = Distance(userInt);
+            Console.WriteLine(result);
+        }
+
+    }
+}
