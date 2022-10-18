@@ -1,0 +1,29 @@
+using System;
+
+namespace ignatova_project1
+{
+    class MainClass
+    {
+        static int Power(int x, int y)
+        {
+            int result = 1;
+            for (int i = 1; i <= y; i++)
+            {
+                result *= x;
+            }
+            return result;
+
+
+
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("enter a number: ");
+            Console.WriteLine("enter the power of the number: ");
+            int x = int.Parse(Console.ReadLine());
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Result: " + Power(x, y));
+        }
+
+    }
+}
